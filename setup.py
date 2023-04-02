@@ -1,4 +1,6 @@
-from distutils.core import setup, find_packages
+from distutils.core import setup
+
+from setuptools import find_packages
 
 project_name = "Tidepool Data Science Project"
 version = "0.1.0"
