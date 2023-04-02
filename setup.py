@@ -1,4 +1,4 @@
-from distutils.core import setup
+from distutils.core import setup, find_packages
 
 project_name = "Tidepool Data Science Project"
 version = "0.1.0"
@@ -11,7 +11,7 @@ setup(
     version=version,
     author=author,
     author_email=author_email,
-    packages=['data_science_tidepool_api_python'],  # add subpackages too
+    packages=find_packages(),  # add subpackages too
     license='BSD 2-Clause',
     long_description=open('README.md').read(),
     python_requires='>=3.6',
